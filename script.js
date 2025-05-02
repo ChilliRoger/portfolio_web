@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Removed comic-style animation to text elements
+    // const textElements = document.querySelectorAll('h1, h2, p');
+    // textElements.forEach(element => {
+    //     element.style.animation = 'bounce 0.5s ease infinite';
+    // });
+
+    // Removed comic-style animation to buttons
+    // const buttons = document.querySelectorAll('.cta');
+    // buttons.forEach(button => {
+    //     button.addEventListener('mouseover', () => {
+    //         button.style.transform = 'scale(1.2) rotate(5deg)';
+    //     });
+    //     button.addEventListener('mouseout', () => {
+    //         button.style.transform = 'scale(1) rotate(0deg)';
+    //     });
+    // });
+
     if (window.location.pathname.includes('projects.html')) {
         fetch('https://api.github.com/users/ChilliRoger/repos')
             .then(response => response.json())
